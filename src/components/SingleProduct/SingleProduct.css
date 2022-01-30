@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+   
+   
+  
+}
+.button-container{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray ; 
+    
+}
+a{
+    text-decoration: none;
+}
+.product-image{
+    width:30%;
+    
+}
+.product-image>img{
+    width: 90%;;
+}
+.details{
+    width: 70%;
+    text-align: left;
+   
+}
+.button{
+    width: 50%;
+}
