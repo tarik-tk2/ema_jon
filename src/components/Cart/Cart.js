@@ -4,13 +4,15 @@ const Cart = (props) => {
 let orderItem=0;
 let total=0;
 const cart=props.cart;
-
+// console.log(props.cart)
+// console.log(props.cart.price)
 for(const product of cart){
    
    if(!product.quantity){
              product.quantity=1;
    }
 
+ 
   total=total+product.quantity*product.price;
   orderItem=orderItem+product.quantity;
   
@@ -35,7 +37,7 @@ const grandTotal=shipping+taxValue+total;
               
             </div>
             <h3>Sub Total :{grandTotal.toFixed(2)}</h3>
-            <button>Purchased Now</button>
+           {props.children}
         </div>
     );
 };

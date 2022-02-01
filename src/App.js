@@ -7,6 +7,7 @@ import Shop from './components/Shop/Shop'
 import Review from './components/Review/Review';
 import Order from './components/Order/Order';
 import Inventory from './components/Inventory/Inventory';
+import Perched from './components/purched/Purched';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,9 @@ function App() {
       <Route path="/review" element={<Review/>}/>
       <Route path="/order" element={<Order/>}/>
       <Route path="/inventory" element={<Inventory/>}/>
+      <Route path="/perched" element={<Perched/>}/>
+     
+    
 
       </Routes>
       </BrowserRouter>

@@ -18,7 +18,7 @@ const SingleProduct = (props) => {
            <div className="button">
                <p>price ${price}</p>
                <p>only {stock} left-order soon </p>
-               <button onClick={props.onclick}>Add To Cart</button>
+               <button onClick={()=>props.onclick()}>Add To Cart</button>
            </div>
            <div className="feater">
                <h5>Features</h5>
